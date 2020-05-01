@@ -13,7 +13,9 @@
     "release-minor": "gulp release --type minor --dom",
     "release-major": "gulp release --type major --dom",
     "coverage": "gulp coverage",
-    "coverage-publish": "aegir-coverage publish"
+    "coverage-publish": "aegir-coverage publish",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "browser": {
     "zlib": "browserify-zlib-next"
@@ -70,7 +72,8 @@
     "peer-id": "~0.9.0",
     "peer-info": "~0.10.0",
     "protocol-buffers": "^3.2.1",
-    "pull-stream": "^3.6.0"
+    "pull-stream": "^3.6.0",
+    "snyk": "^1.316.1"
   },
   "contributors": [
     "Arnaud <arnaud.valensi@gmail.com>",
@@ -87,5 +90,6 @@
     "Sid Harder <sideharder@gmail.com>",
     "greenkeeper[bot] <greenkeeper[bot]@users.noreply.github.com>",
     "ᴠɪᴄᴛᴏʀ ʙᴊᴇʟᴋʜᴏʟᴍ <victorbjelkholm@gmail.com>"
-  ]
+  ],
+  "snyk": true
 }
